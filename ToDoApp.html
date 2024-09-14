@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="ToDoApp.css">
+</head>
+<body>
+    <h1>To-Do App</h1>
+    <input type="text" placeholder="Enter a task!">
+    <select id="priorty">
+        <option value="high">High</option>
+        <option value="moderate">Moderate</option>
+        <option value="low">Low</option>
+      </select>
+      
+    <button class="add">Add</button>
+
+    <div class="task-mang">
+        <div  class="high">
+            <ul>
+                <li class="task-li">Leetcode-DSA <button class="delBtn">X</button></li>
+                <li class="task-li">Gym <button class="delBtn">X</button></li>
+            </ul>
+        </div>
+        <div  class="moderate">
+            <ul>
+                <!-- <li class="task-li">Gym <button class="delBtn">X</button></li> -->
+                <li class="task-li">Contest <button class="delBtn">X</button></li>
+            </ul>
+        </div>
+        <div class="low">
+            <ul>
+                <!-- <li class="task-li">Gym <button class="delBtn">X</button></li> -->
+                <li class="task-li">Pubg <button class="delBtn">X</button></li>
+            </ul>
+        </div>
+    </div>
+    
+   
+
+    <script src="ToDoApp.js"></script>
+</body>
+</html>

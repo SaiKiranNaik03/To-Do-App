@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    background-color: #f0eaac;
+}
+
+h1{
+    margin: 10px 0;
+    margin-bottom: 25px;
+}
+input{
+    width: 20%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    border: solid black 2px;
+    padding-left: 15px;
+    font-size: medium;
+    margin-bottom: 1.5rem;
+}
+
+.add{
+    color: whitesmoke;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(0, 151, 210);
+    font-size: medium;
+    font-weight: 550;
+    border: 0;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-align: left;
+    width: 85%;
+    height: 2.5rem;
+    border: solid black 2px;
+    margin: 0.5rem 0.25rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 525;
+    border-radius: 10px;
+}
+
+.delBtn{
+    color: #f0eaac;
+    border: 0;
+    cursor: pointer;
+    background-color:rgb(244, 17, 17);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: large;
+    font-weight: bold;
+}
+
+#priorty {
+    /* width: 100px; */
+    height: 39px;
+    padding: 0 5px;
+    font-size: 16px;
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+/* #priorty:hover {
+    border-color: #45a049;
+    background-color: #e2e2e2; 
+}*/
+
+#priorty option {
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+/* #priorty:focus {
+    border-color: #45a049;
+} */
+
+.high{
+    border-radius: 10px;
+    /* border: solid 2px red; */
+    width: 30%;
+    margin-bottom: 15px;
+    background-color:#f27979;
+}
+
+.high li{
+    z-index: 10;
+    background-color: #ee8181;
+}
+.moderate{
+    border-radius: 10px;
+    background-color: #e9da53;
+    /* border: solid 2px yellow; */
+    width: 30%;
+    margin-bottom: 15px;
+}
+.moderate li{
+    z-index: 10;
+    background-color: #e8e676;
+}
+
+.low{
+    border-radius: 10px;
+    background-color: #bfe186;
+    /* border: solid 2px green; */
+    width: 30%;
+    margin-bottom: 15px;
+}
+.low li{
+    z-index: 10;
+    background-color: #b9d391;
+}
+
+.task-mang{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+}
