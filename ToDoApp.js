@@ -5,7 +5,6 @@ let sel = document.querySelector('select');
 let hi = document.querySelector('.high');
 let mo = document.querySelector('.moderate');
 let lo = document.querySelector('.low');
-console.dir(lo);
 addTask.addEventListener("click",function(){
     let task = input.value;
     task.trim();
@@ -15,7 +14,7 @@ addTask.addEventListener("click",function(){
     else{
         input.value="";
         let addtsk =  document.createElement('li');
-        addtsk.innerHTML=`${task} <button class='delBtn'>X</button>`;
+        addtsk.innerHTML=`${task} &nbsp; &nbsp; &nbsp; <button class='delBtn'><i class="fa-solid fa-xmark"></i></button>`;
         if(sel.value == 'high'){
             let tarHi = hi.firstChild.nextSibling;
             tarHi.appendChild(addtsk);
@@ -34,9 +33,14 @@ addTask.addEventListener("click",function(){
 
 for(ul of Allul){
     ul.addEventListener("click",function(event){
-        if(event.target.nodeName == 'BUTTON'){
-            let ptr = event.target.parentElement;
+        // if(event.target.nodeName == 'BUTTON'  || event.target.nodeName == 'I' ){
+        //     let ptr = event.target.parentElement;
+        //     ptr.remove();
+        // }
+        if(event.target.nodeName == 'I' ){
+            let ptr = event.target.parentElement.parentElement;
             ptr.remove();
         }
     })
 }
+

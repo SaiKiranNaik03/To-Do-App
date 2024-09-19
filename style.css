@@ -4,10 +4,11 @@
 }
 body{
     text-align: center;
-    background-color: #f0eaac;
+    background-color: #efebc5;
 }
 
 h1{
+    font-size: 45px;
     margin: 10px 0;
     margin-bottom: 25px;
 }
@@ -15,7 +16,7 @@ input{
     width: 20%;
     height: 40px;
     border-radius: 10px;
-    background-color: antiquewhite;
+    background-color: #f1f1f1;
     border: solid black 2px;
     padding-left: 15px;
     font-size: medium;
@@ -23,6 +24,7 @@ input{
 }
 
 .add{
+    cursor: pointer;
     color: whitesmoke;
     width: 80px;
     height: 40px;
@@ -31,8 +33,17 @@ input{
     font-size: medium;
     font-weight: 550;
     border: 0;
+    transition-duration: 0.1s;
 }
 
+.add:hover{
+    border: solid black 2px;
+    background-color:rgb(45, 170, 219);
+}
+
+/* .div_task{
+    width: 60%;
+} */
 ul{
     display: flex;
     justify-content: center;
@@ -46,25 +57,31 @@ li{
     list-style: none;
     text-align: left;
     width: 85%;
-    height: 2.5rem;
+    /* height: 2.5rem; */
     border: solid black 2px;
     margin: 0.5rem 0.25rem;
     padding: 0.5rem 1rem;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 525;
     border-radius: 10px;
 }
 
 .delBtn{
-    color: #f0eaac;
+    color: #ffffff;
     border: 0;
     cursor: pointer;
     background-color:rgb(244, 17, 17);
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    font-size: large;
-    font-weight: bold;
+    font-size: 25px;
+    z-index: 50;
+    transition-duration: 0.4s;
+}
+.delBtn:hover{
+    border: solid black 2px;
+    scale: 1.2;
+    background-color:rgb(226, 14, 14)
 }
 
 #priorty {
@@ -72,6 +89,7 @@ li{
     height: 39px;
     padding: 0 5px;
     font-size: 16px;
+    font-weight: 500;
     /* border: 2px solid black; */
     border-radius: 5px;
     background-color: #f1f1f1;
@@ -100,7 +118,7 @@ li{
     /* border: solid 2px red; */
     width: 30%;
     margin-bottom: 15px;
-    background-color:#f27979;
+    background-color:#FF6361;
 }
 
 .high li{
@@ -136,4 +154,30 @@ li{
     justify-content:center;
     flex-direction: column;
     align-items: center;
+}
+
+@media(max-width:431px){
+    .div_task{
+        width: 90%;
+    }
+    input{
+        width: 50%;
+    }
+    #priorty {
+        width: 65px;
+        height: 39px;
+        padding: 0 1px;
+        font-size: 16px;
+    }
+    
+}
+
+@media((min-width:432px) and (max-width:801px)){
+    .div_task{
+        width: 70%;
+    }
+    input{
+        width: 50%;
+    }
+    
 }
