@@ -13,7 +13,7 @@ This is a simple and efficient To-Do List application built with HTML, CSS, and 
 
 ## Demo
 
-You can view the live demo of the app [saikirannaik03.github.io/To-Do-App/]
+You can view the live demo of the app https://saikirannaik03.github.io/To-Do-App/
 
 ## Installation
 
